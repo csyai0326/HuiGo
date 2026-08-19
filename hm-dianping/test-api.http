@@ -1,0 +1,21 @@
+### 添加秒杀优惠券
+POST http://localhost:8081/voucher/seckill
+Content-Type: application/json
+Authorization: Bearer 64fe2f9a49db49d3bd7c6432394ce94d
+
+{
+  "shopId": 1,
+  "title": "100元代金券",
+  "subTitle": "周一至周五均可使用",
+  "rules": "全场通用\\n无需预约\\n可无限叠加\\n不兑现、不找零\\n仅限食堂",
+  "payValue": 8000,
+  "actualValue": 10000,
+  "type": 1,
+  "stock": 100,
+  "beginTime": "2026-08-16T10:00:00",
+  "endTime": "2026-08-20T23:59:59"
+}
+
+### 删除指定ID的优惠券
+DELETE http://localhost:8081/voucher/10
+Authorization: Bearer 64fe2f9a49db49d3bd7c6432394ce94d

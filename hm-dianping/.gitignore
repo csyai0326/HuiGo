@@ -31,3 +31,9 @@ build/
 
 ### VS Code ###
 .vscode/
+
+.idea/
+*.iml
+target/
+out/
+*.class
